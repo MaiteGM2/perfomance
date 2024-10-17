@@ -66,4 +66,14 @@ function localVariables(){
     return localProduct;
 }
 
+let globalProduct = 1;
+
+function globalVariables(){
+    console.time('Global variables');
+    for (let i = 1; i <= 1000000; i++) {
+        globalProduct *= 2; 
+    }
+    console.timeEnd('Global Variables');
+}
+
 fetchApi();
