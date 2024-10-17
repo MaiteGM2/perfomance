@@ -4,6 +4,7 @@ async function fetchApi() {
         const data = await result.json();
 
         const totalElements = multiplyElements(data);
+        timeComparison(totalElements);
     } catch (error) {
         console.error('Error fetching data:', error);
     }
