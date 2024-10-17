@@ -35,4 +35,15 @@ function whileLoop(elements){
     console.timeEnd('While Loop');
 }
 
+function forLoop(elements){
+    const pushedItems = [];
+
+    console.time('For Loop');
+    for (let i = 0; i < elements.length; i++) {
+        const item = elements[i];
+        pushedItems.push(item);
+    }
+    console.timeEnd('For Loop');
+}
+
 fetchApi();
