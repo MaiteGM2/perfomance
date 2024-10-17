@@ -85,4 +85,13 @@ function concatenate(num) {
     console.timeEnd('Concatenate');
 }
 
+function templateLiteral(num) {
+    let result = '';
+    console.time('Template Literal');
+    for (let i = 0; i < num; i++) {
+        result += `Constant: ${i}, `; 
+    }
+    console.timeEnd('Template Literal');
+}
+
 fetchApi();
