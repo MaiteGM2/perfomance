@@ -22,4 +22,17 @@ function multiplyElements(data){
     return multipliedElements;
 }
 
+function whileLoop(elements){
+    const pushedItems = [];
+
+    console.time('While Loop');
+    let i = 0;
+    while (i < elements.length) {
+        const item = elements[i];
+        pushedItems.push(item);
+        i++;
+    }
+    console.timeEnd('While Loop');
+}
+
 fetchApi();
