@@ -56,4 +56,14 @@ function forEachLoop(elements){
     console.timeEnd('ForEach Loop');
 }
 
+function localVariables(){
+    console.time('Local variables');
+    let localProduct = 1;
+    for (let i = 1; i <= 1000000; i++) {
+        localProduct *= 2;
+    }
+    console.timeEnd('Local variables');
+    return localProduct;
+}
+
 fetchApi();
