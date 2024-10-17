@@ -22,6 +22,15 @@ function multiplyElements(data){
     return multipliedElements;
 }
 
+function timeComparison(elements){
+    const num = 10000000;
+    whileLoop(elements);
+    forLoop(elements);
+    forEachLoop(elements);
+    concatenate(num);
+    templateLiteral(num);
+}
+
 function whileLoop(elements){
     const pushedItems = [];
 
