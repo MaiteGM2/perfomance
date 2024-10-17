@@ -46,4 +46,14 @@ function forLoop(elements){
     console.timeEnd('For Loop');
 }
 
+function forEachLoop(elements){
+    const pushedItems = [];
+
+    console.time('ForEach Loop');
+    elements.forEach(item => {
+        pushedItems.push(item);
+    });
+    console.timeEnd('ForEach Loop');
+}
+
 fetchApi();
